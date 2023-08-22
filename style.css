@@ -1,0 +1,79 @@
+/*------------- Container Alignment -------------*/
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 10%;
+}
+
+
+.innerContainer{
+    background-color: #DADADA;
+    border: 1px solid;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 7%;
+}
+
+/*----------------- Calculator Alignment------------*/
+
+.row{
+    margin: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.button{
+    border-radius: 50%;
+    padding: 3% 6%;
+    margin: 1%;
+    border: none;
+    background-color: inherit;
+}
+
+.button:hover{
+    transform: scale(1.5);
+}
+
+
+#input, #outPut, #result{
+    border: none;
+    background-color: #B9B9B9;
+ 
+}
+
+#input{
+    text-align: right;
+}
+
+#equal{
+    background-color: antiquewhite;
+    text-decoration-color: black;
+}
+
+#clear{
+    background-color: cadetblue;
+}
+
+
+@media only screen and (max-width: 700px){
+
+.button{
+    background-color: rgb(46, 45, 45);
+        color           : white;
+        border          : none;
+        border-radius   : 0%;
+        padding         : 3% 5%;
+        margin          : 0% 12%;
+        text-align      : center;
+        width           : 100%;
+}
+
+#equal{
+    color: black;
+}
+    
+}
+
